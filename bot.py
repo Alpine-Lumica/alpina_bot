@@ -9,7 +9,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from google_sheet import add_order_to_sheet
 from pdf_generator import generate_pdf
 
-TOKEN = os.getenv("TELEGRAM_TOKEN")
+TOKEN = os.getenv("TELEGRAM_TOKEN",'8060264514:AAFvnWV6DoSueOS4yV68SUNwJ-_rpSZxNYE')
 bot = Bot(token=TOKEN, parse_mode=ParseMode.HTML)
 dp = Dispatcher(storage=MemoryStorage())
 
